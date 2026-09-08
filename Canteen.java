@@ -67,14 +67,12 @@ public class Canteen {
             double finalAmountToPay = totalAmountBeforeDeductions - totalDeduction;
             
             // 8. Final Transaction Summary
-            System.out.println("\n=================================");
-            System.out.println("       FINAL TRANSACTION        ");
-            System.out.println("=================================");
-            System.out.println("Total quantity of items: " + totalQuantityPurchased);
+            System.out.println("===== ORDER SUMMARY ====y=");
+            System.out.println("Total items: " + totalQuantityPurchased);
             System.out.printf("Total before deductions: $%.2f%n", totalAmountBeforeDeductions);
             System.out.printf("Total deduction:         $%.2f%n", totalDeduction);
-            System.out.printf("Final amount to pay:     $%.2f%n", finalAmountToPay);
-            System.out.println("=================================");
+            System.out.printf("Final amount:     $%.2f%n", finalAmountToPay);
+            System.out.println("Thank you for ordering!");
         }
     }
 }
